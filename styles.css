@@ -293,7 +293,7 @@ a{ color:inherit; }
 .contact-title{ font-weight:900; margin-bottom:8px; }
 .contact-text a{ text-decoration:none; border-bottom:1px dashed rgba(255,255,255,.35); }
 
-.small-note{ margin-top:14px; font-size:20px; }
+.small-note{ margin-top:14px; font-size:18px; }
 
 .footer{
   border-top:1px solid rgba(255,255,255,.08);
@@ -342,8 +342,6 @@ a{ color:inherit; }
   .hero-copy h1{ font-size:36px; }
 }
 
-.contact-email {
-  font-size: 20px;
-  font-weight: 600;
-}
+
+
 
