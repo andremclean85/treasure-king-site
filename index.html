@@ -3,376 +3,194 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Treasure King</title>
-  <meta name="description" content="Treasure King — premium deals, rewards, and exclusive drops." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="./favicon.png">
-<!-- Open Graph / Social Sharing -->
-<meta property="og:title" content="Treasure King — Surplus Liquidation">
-<meta property="og:description" content="Premium deals. Clear terms. Real value.">
-<meta property="og:image" content="https://yourdomain.com/og-image.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https:/www.treasurekingstore.com/">
-<meta property="og:image" content="https://treasureking.co/og-image.png">
-<!-- WhatsApp / Facebook compatibility -->
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image" content="https://treasureking.co/og-image.png">
 
-<!-- Twitter/X -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yourdomain.com/og-image.png">
+  <title>Treasure King Store</title>
+  <meta name="description" content="Surplus deals on appliances and home improvement items in Jamaica, NY." />
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Treasure King Store" />
+  <meta property="og:description" content="Surplus deals on appliances and home improvement items in Jamaica, NY." />
+  <meta property="og:image" content="./og-image.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.treasurekingstore.com/" />
 
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
-<body>
-  <!-- Top Announcement -->
+<body id="top">
+  <!-- Top strip -->
   <div class="topbar">
-    <div class="container topbar__inner">
-      <span class="badge">NEW</span>
-      <p>Exclusive drops + loyalty rewards. Join the Treasure List for early access.</p>
-      <a class="topbar__link" href="#join">Join</a>
+    <div class="container topbar-inner">
+      <span class="pill">Surplus deals • Home improvement • Appliances</span>
+      <a class="topbar-cta" href="#deals">See Deals</a>
     </div>
   </div>
 
   <!-- Header -->
   <header class="header">
-    <div class="container header__inner">
-      <a class="brand" href="#home" aria-label="Treasure King home">
-        <img class="brand__logo" src="assets/logo.png" c />
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Treasure King Home">
+        <img
+          class="brand-logo"
+          src="./assets/logo-header.png"
+          alt="TK Surplus Liquidation"
+          onerror="this.onerror=null; this.src='./assets/logo.png';"
+        />
       </a>
 
-      <nav class="nav" aria-label="Primary">
+      <nav class="nav" aria-label="Primary navigation">
         <a href="#about">About</a>
-        <a href="#offers">Offers</a>
-        <a href="#how">How it works</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#contact" class="nav__cta">Contact</a>
+        <a href="#deals">Deals</a>
+        <a href="#location">Location</a>
+        <a class="nav-btn" href="#contact">Contact</a>
       </nav>
 
-      <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
 
-    <!-- Mobile drawer -->
-    <div class="drawer" id="drawer" aria-hidden="true">
-      <div class="drawer__panel">
-        <div class="drawer__top">
-          <strong>Menu</strong>
-          <button class="drawer__close" id="drawerClose" aria-label="Close menu">✕</button>
-        </div>
-        <a href="#about" class="drawer__link">About</a>
-        <a href="#offers" class="drawer__link">Offers</a>
-        <a href="#how" class="drawer__link">How it works</a>
-        <a href="#testimonials" class="drawer__link">Reviews</a>
-        <a href="#contact" class="drawer__link">Contact</a>
-        <a href="#join" class="btn btn--gold drawer__btn">Join the Treasure List</a>
-      </div>
+    <!-- Mobile menu -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#about">About</a>
+      <a href="#deals">Deals</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
     </div>
   </header>
 
   <!-- Hero -->
-  <main id="home">
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <div class="pill">
-            <span class="pill__dot"></span>
-            <span>Premium drops • Rewards • Big wins</span>
-          </div>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Find the real treasure.</h1>
+        <p>
+          Discount appliances, home improvement items, and seasonal deals —
+          updated in-store. Stop by or tap for directions.
+        </p>
 
-          <h1>
-            Find the <span class="text-gold">real treasure</span>.
-            <br />Claim rewards like a king.
-          </h1>
-
-          <p class="lead">
-            Treasure King is your hub for exclusive offers, curated deals, and loyalty rewards.
-            Built for people who move smart — and collect big.
-          </p>
-
-          <div class="hero__actions">
-            <a class="btn btn--gold" href="#offers">Explore Offers</a>
-            <a class="btn btn--ghost" href="#how">How it works</a>
-          </div>
-
-          <div class="stats">
-            <div class="stat">
-              <div class="stat__num">24/7</div>
-              <div class="stat__label">Access</div>
-            </div>
-            <div class="stat">
-              <div class="stat__num">VIP</div>
-              <div class="stat__label">Drops</div>
-            </div>
-            <div class="stat">
-              <div class="stat__num">Fast</div>
-              <div class="stat__label">Support</div>
-            </div>
-          </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="#deals">View Deals</a>
+          <a class="btn" href="#location">Store Location</a>
         </div>
 
-        <div class="hero__card">
-          <div class="cardGlow"></div>
-          <div class="heroCard">
-            <div class="heroCard__top">
-              <span class="miniBadge">TREASURE LIST</span>
-              <span class="miniText">Early access + rewards</span>
-            </div>
-
-            <div class="heroCard__body">
-              <h3>Get notified first</h3>
-              <p>Be first in line when limited offers go live.</p>
-
-              <form class="form" id="join" autocomplete="on">
-                <label class="srOnly" for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="Enter your email" required />
-                <button class="btn btn--red" type="submit">Join</button>
-              </form>
-
-              <div class="fineprint">
-                No spam. Unsubscribe anytime.
-              </div>
-            </div>
-
-            <div class="heroCard__footer">
-              <div class="shield">👑</div>
-              <div>
-                <strong>Treasure King Promise</strong>
-                <div class="muted">Clean deals. Clear terms. Real value.</div>
-              </div>
-            </div>
+        <div class="hero-meta">
+          <div class="meta-card">
+            <div class="meta-title">📍 Address</div>
+            <div class="meta-text">228-05 Linden Blvd, Jamaica, NY 11411</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-title">📞 Phone</div>
+            <div class="meta-text"><a href="tel:+17187726567">1-718-772-6567</a></div>
           </div>
         </div>
       </div>
 
-      <div class="hero__bg"></div>
-    </section>
-
-    <!-- About -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section__head">
-          <h2>About Treasure King</h2>
-          <p>
-            We curate offers and rewards that feel premium — with the energy of a crown.
-            Whether you’re shopping, joining a promo, or collecting loyalty perks, Treasure King keeps it simple.
-          </p>
-        </div>
-
-        <div class="grid3">
-          <article class="feature">
-            <div class="feature__icon">🏆</div>
-            <h3>Premium value</h3>
-            <p>Curated offers that respect your money and your time.</p>
-          </article>
-
-          <article class="feature">
-            <div class="feature__icon">⚡</div>
-            <h3>Fast drops</h3>
-            <p>Limited-time drops, first access for Treasure List members.</p>
-          </article>
-
-          <article class="feature">
-            <div class="feature__icon">🛡️</div>
-            <h3>Trusted</h3>
-            <p>Clear terms, secure checkout links, and support that answers.</p>
-          </article>
+      <div class="hero-panel">
+        <div class="panel-inner">
+          <div class="panel-title">Today’s highlights</div>
+          <ul class="bullets">
+            <li>Appliances & home items</li>
+            <li>Seasonal & clearance deals</li>
+            <li>New inventory often</li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Offers -->
-    <section class="section section--alt" id="offers">
-      <div class="container">
-        <div class="section__head">
-          <h2>Featured Offers</h2>
-          <p>Replace these cards with your real products, promos, or services.</p>
-        </div>
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Treasure King</h2>
+      <p class="muted">
+        Treasure King is your neighborhood surplus liquidation stop for discounted appliances and
+        home improvement items. Visit us in-store to see what’s available.
+      </p>
+    </div>
+  </section>
 
-        <div class="cards">
-          <article class="offer">
-            <div class="offer__tag">HOT</div>
-            <h3>King’s Deal</h3>
-            <p>Limited-time promo with a strong value proposition.</p>
-            <ul class="list">
-              <li>✔ Clear benefits</li>
-              <li>✔ Time window</li>
-              <li>✔ Strong CTA</li>
-            </ul>
-            <a class="btn btn--gold btn--block" href="#contact">Get this offer</a>
-          </article>
-
-          <article class="offer">
-            <div class="offer__tag offer__tag--gold">VIP</div>
-            <h3>Treasure Rewards</h3>
-            <p>Earn rewards for repeat engagement and referrals.</p>
-            <ul class="list">
-              <li>✔ Loyalty perks</li>
-              <li>✔ Referral bonuses</li>
-              <li>✔ Early access</li>
-            </ul>
-            <a class="btn btn--ghost btn--block" href="#join">Join Rewards</a>
-          </article>
-
-          <article class="offer">
-            <div class="offer__tag offer__tag--red">NEW</div>
-            <h3>Exclusive Drop</h3>
-            <p>A premium drop for members — limited quantities.</p>
-            <ul class="list">
-              <li>✔ Member-only</li>
-              <li>✔ Limited stock</li>
-              <li>✔ Instant alerts</li>
-            </ul>
-            <a class="btn btn--red btn--block" href="#join">Get alerts</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- How it works -->
-    <section class="section" id="how">
-      <div class="container">
-        <div class="section__head">
-          <h2>How it works</h2>
-          <p>Three steps to secure the treasure.</p>
-        </div>
-
-        <div class="steps">
-          <div class="step">
-            <div class="step__num">1</div>
-            <h3>Join the Treasure List</h3>
-            <p>Get early access and notifications.</p>
-          </div>
-          <div class="step">
-            <div class="step__num">2</div>
-            <h3>Choose an offer</h3>
-            <p>Browse curated deals and drops.</p>
-          </div>
-          <div class="step">
-            <div class="step__num">3</div>
-            <h3>Claim rewards</h3>
-            <p>Earn perks for repeat engagement.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section section--alt" id="testimonials">
-      <div class="container">
-        <div class="section__head">
-          <h2>What people say</h2>
-          <p>Swap these with real reviews when you’re ready.</p>
-        </div>
-
-        <div class="quotes">
-          <figure class="quote">
-            <blockquote>
-              “Treasure King is clean and premium. The deals feel real, not gimmicky.”
-            </blockquote>
-            <figcaption>— Customer A</figcaption>
-          </figure>
-
-          <figure class="quote">
-            <blockquote>
-              “The early access alerts are clutch. I caught the drop before it sold out.”
-            </blockquote>
-            <figcaption>— Customer B</figcaption>
-          </figure>
-
-          <figure class="quote">
-            <blockquote>
-              “Fast response when I had questions. Proper brand.”
-            </blockquote>
-            <figcaption>— Customer C</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="container contact">
+  <!-- Deals -->
+  <section id="deals" class="section">
+    <div class="container">
+      <div class="section-head">
         <div>
-          <h2>Contact</h2>
-          <p class="muted">
-            Put your real email/phone/WhatsApp here. You can also connect a form service later (Formspree, Netlify Forms, etc.).
-          </p>
-
-          <div class="contactCards">
-            <div class="contactCard">
-              <div class="contactCard__icon">📩</div>
-              <div>
-                <strong>Email</strong>
-                <div class="muted">hello@treasureking.co</div>
-              </div>
-            </div>
-
-            <div class="contactCard">
-              <div class="contactCard__icon">📱</div>
-              <div>
-                <strong>WhatsApp</strong>
-                <div class="muted">+1 (876) 000-0000</div>
-              </div>
-            </div>
-          </div>
+          <h2>Deals in-store</h2>
+          <p class="muted">Here are 10 examples of items currently on sale.</p>
         </div>
+        <a class="btn small" href="#location">Get Directions</a>
+      </div>
 
-        <div class="contactFormWrap">
-          <div class="contactFormGlow"></div>
-          <form class="contactForm" id="contactForm">
-            <h3>Send a message</h3>
+      <div class="deals-grid" id="dealsGrid">
+        <!-- Images inserted by JS (keeps HTML clean) -->
+      </div>
+    </div>
+  </section>
 
-            <label>
-              Name
-              <input name="name" type="text" placeholder="Your name" required />
-            </label>
-
-            <label>
-              Email
-              <input name="email" type="email" placeholder="you@email.com" required />
-            </label>
-
-            <label>
-              Message
-              <textarea name="message" rows="4" placeholder="Tell us what you need..." required></textarea>
-            </label>
-
-            <button class="btn btn--gold btn--block" type="submit">Send</button>
-            <p class="fineprint">This demo form shows a success message only (no backend).</p>
-          </form>
+  <!-- Location -->
+  <section id="location" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Location</h2>
+          <p class="muted">Use the map below or tap Directions to open routing.</p>
         </div>
       </div>
-    </section>
-  </main>
+
+      <div class="map-card">
+        <iframe
+          title="Treasure King Store Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80.31506407621782!2d-73.73296097294825!3d40.692907970726694!2m3!1f355.5289674261625!2f0!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x89c263eee3ecd66d%3A0x4598495aac69c345!2s228-05%20Linden%20Blvd%2C%20Jamaica%2C%20NY%2011411%2C%20USA!5e1!3m2!1sen!2sjm!4v1767657340579!5m2!1sen!2sjm"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+
+        <div class="map-actions">
+          <a class="btn primary" id="directionsBtn" href="#" rel="noopener">Directions</a>
+          <a class="btn" href="tel:+17187726567">Call: 1-718-772-6567</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-title">📍 Address</div>
+          <div class="contact-text">228-05 Linden Blvd, Jamaica, NY 11411</div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-title">📞 Phone</div>
+          <div class="contact-text">
+            <a href="tel:+17187726567">1-718-772-6567</a>
+          </div>
+        </div>
+      </div>
+      <p class="muted small-note">
+        Note: Email contact has been removed as requested.
+      </p>
+    </div>
+  </section>
+
+  <!-- Floating Navigate button (mobile) -->
+  <a class="float-nav" id="floatNav" href="#" aria-label="Get directions">Navigate</a>
 
   <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <img src="assets/logo.png" alt="Treasure King" />
-        <p class="muted">© <span id="year"></span> Treasure King. All rights reserved.</p>
-      </div>
-
-      <div class="footer__links">
-        <a href="#about">About</a>
-        <a href="#offers">Offers</a>
-        <a href="#how">How it works</a>
-        <a href="#contact">Contact</a>
-      </div>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Treasure King Store</span>
+      <span class="muted">Jamaica, NY</span>
     </div>
   </footer>
 
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
-
-f
-
