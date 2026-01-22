@@ -341,3 +341,8 @@ a{ color:inherit; }
   .brand-logo{ width:64px; }
   .hero-copy h1{ font-size:36px; }
 }
+
+.contact-email {
+  font-size: 20px;
+  font-weight: 600;
+}
